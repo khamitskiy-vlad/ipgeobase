@@ -5,7 +5,7 @@ require_relative "lib/ipgeobase/version"
 Gem::Specification.new do |spec|
   spec.name = "ipgeobase"
   spec.version = Ipgeobase::VERSION
-  spec.authors = ["Vlad Khamitsky"]
+  spec.authors = ["Vlad Khamitskiy"]
   spec.email = ["vladislaviktorovic@gmail.com"]
   spec.summary = "Gem to return IP metadate"
   spec.description = "Gem returns information about the city, country, country code, latitude and longitude of the IP address"
