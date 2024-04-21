@@ -5,7 +5,7 @@ require "ipgeobase"
 
 require "minitest/autorun"
 
-require 'webmock/minitest'
+require "webmock/minitest"
 
-require 'simplecov'
+require "simplecov"
 SimpleCov.start
