@@ -1,9 +1,17 @@
 # frozen_string_literal: true
 
-require "bundler/gem_tasks"
-require "minitest/test_task"
+require 'rake/testtask'
+require "minitest/autorun"
+require_relative "test/test_ipgeobase.rb"
+require_relative "test/test_helper.rb"
 
-Minitest::TestTask.create
+desc 'Run unit tests'
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.libs << 'test'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = true
+end
 
 require "rubocop/rake_task"
 
