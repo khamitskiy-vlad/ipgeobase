@@ -1,5 +1,7 @@
 # Ipgeobase
 
+[![Ruby](https://github.com/khamitskiy-vlad/ipgeobase/actions/workflows/ruby.yml/badge.svg)](https://github.com/khamitskiy-vlad/ipgeobase/actions/workflows/ruby.yml)
+
 Ipgeobase gem returns IP metadata. This gem contains a main method `lookup()` that takes an IP address and returns object metadata.
 
 The metadata contains the following fields:
