@@ -4,11 +4,11 @@ Ipgeobase gem returns IP metadata. This gem contains a main method `lookup()` th
 
 The metadata contains the following fields:
 
-`city` - city
-`country` - country
-`countryCode` - country code
-`lat` - latitude
-`lon` - longitude
+`city` - city  
+`country` - country  
+`countryCode` - country code  
+`lat` - latitude  
+`lon` - longitude  
 
 ## Usage
 
