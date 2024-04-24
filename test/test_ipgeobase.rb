@@ -5,7 +5,7 @@ require_relative "../lib/ipgeobase"
 
 class TestIpgeobase < Minitest::Test
   def setup
-    xml = %Q(
+    xml = %(
       <query>
         <status>success</status>
         <country>United States</country>
@@ -24,20 +24,20 @@ class TestIpgeobase < Minitest::Test
       </query>
       )
 
-    stub_request(:get, 'http://ip-api.com/xml/8.8.8.8').
-       to_return(:body => xml)
-    
+    stub_request(:get, "http://ip-api.com/xml/8.8.8.8")
+      .to_return(body: xml)
+
     @expected_atrributes = {
-      city: 'Ashburn',
-      country: 'United States',
-      countryCode: 'US',
-      lat: '39.03',
-      lon: '-77.5'
+      city: "Ashburn",
+      country: "United States",
+      countryCode: "US",
+      lat: "39.03",
+      lon: "-77.5"
     }
   end
 
   def test_gem_return_metadata
-    ip_meta = Ipgeobase.lookup '8.8.8.8'
+    ip_meta = Ipgeobase.lookup("8.8.8.8")
 
     assert { @expected_atrributes[:city] == ip_meta.city }
     assert { @expected_atrributes[:country] == ip_meta.country }

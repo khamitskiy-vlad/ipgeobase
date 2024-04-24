@@ -3,7 +3,7 @@
 require "simplecov"
 SimpleCov.start
 
-require 'bundler/setup'
+require "bundler/setup"
 Bundler.require
 
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
